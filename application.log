@@ -1,0 +1,74 @@
+2022-02-01 19:38:53,370 INFO  StartupInfoLogger:55 - [] Starting DemoApplication using Java 11.0.12 on 01HW1872884 with PID 12096 (C:\Users\2005696\Documents\STS Workspace\Demo\target\classes started by 2005696 in C:\Users\2005696\Documents\STS Workspace\Demo)
+2022-02-01 19:38:53,374 INFO  SpringApplication:635 - [] No active profile set, falling back to default profiles: default
+2022-02-01 19:38:54,273 INFO  RepositoryConfigurationDelegate:262 - [] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-01 19:38:54,274 INFO  RepositoryConfigurationDelegate:132 - [] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-01 19:38:54,333 INFO  RepositoryConfigurationDelegate:201 - [] Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2022-02-01 19:38:54,347 INFO  RepositoryConfigurationDelegate:262 - [] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-01 19:38:54,348 INFO  RepositoryConfigurationDelegate:132 - [] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-02-01 19:38:54,353 INFO  RepositoryConfigurationDelegate:201 - [] Finished Spring Data repository scanning in 4 ms. Found 0 MongoDB repository interfaces.
+2022-02-01 19:38:54,948 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 8080 (http)
+2022-02-01 19:38:54,958 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2022-02-01 19:38:54,958 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-01 19:38:55,110 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2022-02-01 19:38:55,111 INFO  ServletWebServerApplicationContext:290 - [] Root WebApplicationContext: initialization completed in 1668 ms
+2022-02-01 19:38:55,287 WARN  AbstractApplicationContext:591 - [] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-02-01 19:38:55,290 INFO  DirectJDKLog:173 - [] Stopping service [Tomcat]
+2022-02-01 19:38:55,310 INFO  ConditionEvaluationReportLoggingListener:136 - [] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-01 19:38:55,329 ERROR LoggingFailureAnalysisReporter:40 - [] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-02-01 19:39:23,139 INFO  StartupInfoLogger:55 - [] Starting DemoApplication using Java 11.0.12 on 01HW1872884 with PID 3836 (C:\Users\2005696\Documents\STS Workspace\Demo\target\classes started by 2005696 in C:\Users\2005696\Documents\STS Workspace\Demo)
+2022-02-01 19:39:23,141 INFO  SpringApplication:635 - [] No active profile set, falling back to default profiles: default
+2022-02-01 19:39:23,944 INFO  RepositoryConfigurationDelegate:262 - [] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-01 19:39:23,945 INFO  RepositoryConfigurationDelegate:132 - [] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-01 19:39:23,959 INFO  RepositoryConfigurationDelegate:201 - [] Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2022-02-01 19:39:23,964 INFO  RepositoryConfigurationDelegate:262 - [] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-01 19:39:23,964 INFO  RepositoryConfigurationDelegate:132 - [] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-02-01 19:39:23,967 INFO  RepositoryConfigurationDelegate:201 - [] Finished Spring Data repository scanning in 1 ms. Found 0 MongoDB repository interfaces.
+2022-02-01 19:39:24,392 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 8080 (http)
+2022-02-01 19:39:24,399 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2022-02-01 19:39:24,400 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-01 19:39:24,511 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2022-02-01 19:39:24,512 INFO  ServletWebServerApplicationContext:290 - [] Root WebApplicationContext: initialization completed in 1325 ms
+2022-02-01 19:39:24,688 WARN  AbstractApplicationContext:591 - [] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-02-01 19:39:24,691 INFO  DirectJDKLog:173 - [] Stopping service [Tomcat]
+2022-02-01 19:39:24,709 INFO  ConditionEvaluationReportLoggingListener:136 - [] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-01 19:39:24,725 ERROR LoggingFailureAnalysisReporter:40 - [] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
